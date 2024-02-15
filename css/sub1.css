@@ -1,0 +1,591 @@
+@import url(common.css);
+@import url(header.css);
+@import url(footer.css);
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons+Outlined');
+
+@font-face {
+  font-family: 'HSBombaram21-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/HSBombaram21-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html{scroll-behavior: smooth;}
+body{
+  color: #333;
+  background-color: #e3fbff;
+  background-image: url(../image/hoyoverse-main/hoyoverse-bg2.png);
+  background: url(../image/hoyoverse-main/hoyoverse-bg.png) no-repeat center fixed;
+}
+
+/* Main-------------------------------------Main------------------- */
+
+
+.subLogo{
+  position: absolute;
+  top: 60px;
+  right: 50px;
+}
+
+#slideShowUp{
+  position:relative;
+  width: 100vw;
+  height: 80vh;
+  margin:auto;
+  overflow: hidden;
+  z-index: -100;
+}
+.slideUp ul {position: absolute;}
+
+.pos{
+  width: 100vw;
+  height: 80vh;
+  object-fit: cover;
+  object-position: top;
+}
+.posCenter{object-position: center;}
+
+/*Play,Stop 버튼*/
+.playstopUp .stopup{
+	position: absolute;
+	bottom: 30%;
+	right:  10%;
+	width: 30px;
+	height: 41px;
+	background: url(../image/btn_pause.png) no-repeat;
+}
+.playstopUp .playup {
+	position: absolute;
+	bottom: 30%;
+	right:  10%;
+	width: 30px;
+	height: 41px;
+	background: url(../image/btn_play.png) no-repeat;
+}
+
+/* 안드로이드 ios 버튼 */
+.playstore-button {
+  width: 150px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #000;
+  border-radius: 9999px;
+  background-color: rgba(0, 0, 0, 1);
+  padding: 0.625rem 1.5rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  outline: 0;
+  transition: all  .2s ease;
+  text-decoration: none;
+  position: absolute;
+  bottom: 40%;
+  left: 30%;
+  z-index: 300;
+}
+
+.playstore-button.apple {
+  width: 150px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #000;
+  border-radius: 9999px;
+  background-color: rgba(0, 0, 0, 1);
+  padding: 0.625rem 1.5rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  outline: 0;
+  transition: all  .2s ease;
+  text-decoration: none;
+  position: absolute;
+  bottom: 30%;
+  left: 30%;
+}
+
+
+.playstore-button:hover {
+  background-color: transparent;
+  color: rgba(0, 0, 0, 1);
+}
+
+.icon {
+  position: absolute;
+  left: 21px;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+.icon2 {
+  position: absolute;
+  left: 17px;
+  height: 35px;
+  width: 35px;
+}
+
+
+.texts {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1;
+}
+.texts2 {
+  margin-left: 0.1rem;
+}
+
+.text-1 {margin-bottom: 0.25rem;
+  font-size: 0.75rem;
+  line-height: 1rem;}
+
+.text-2 {font-weight: 600;}
+
+/* Section-------------------------------------Section------------------- */
+
+.container{
+  position: relative;
+  width: 1400px;
+  margin: auto;
+}
+
+
+.nowPos{
+  width: 1400px;
+  margin: 100px auto 0;
+  font-size: 14px;
+  text-align: right;
+}
+h3{
+  margin: 0px auto 100px;
+  width: 1400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'HSBombaram21-Regular';
+  font-size: 20px;
+  position: relative;
+}
+h3:nth-child(2){
+  margin-top: 100px;
+}
+
+h3::before{
+  content: '';
+  position: absolute;
+  width: 35%;
+  left: 0;
+  top: 50%;
+  border: 1px solid #666;
+}
+
+h3::after{
+  content: '';
+  position: absolute;
+  width: 35%;
+  right: 0;
+  top: 50%;
+  border: 1px solid #666;
+}
+
+
+.containerText{
+  width: 400px;
+  height: 500px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.containerText.subText1 p{
+  padding: 0;
+}
+
+.Text2{
+  top: 0;
+  left: 0;
+  text-align: center;
+  line-height: 25px;
+}
+
+.containerText h2{
+  font-family: 'HSBombaram21-Regular';
+  font-size: 40px;
+  text-align: center;
+}
+
+.containerText p{
+  padding: 15px 25px;
+  line-height: 30px;
+}
+
+.containerText_bg{
+  position: relative;
+  width: 1400px;
+  height: 700px;
+  margin: auto;
+  background: url(../image/honkai-3rd/subvisual.png) no-repeat center;
+}
+
+/* -------원신 페이지 아코디언탭----------- */
+.gensin{
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+.container2{
+  width: 1400px;
+  height: 700px;
+  display: flex;
+}
+.accordion{
+  flex: 1;
+  margin-right: 20px;
+  margin: auto;
+}
+.container2_bg{
+  flex: 1;
+}
+.title{
+  border: 1px solid #ddd;
+  width: 600px;
+  font-family:'HSBombaram21-Regular';
+  font-size: 24px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+.title:after{
+  content: '\f105';
+  font-family: fontawesome;
+  float: right;
+  margin-right: 5px;
+  transition: 0.3s;
+}
+.title.activeSub:after{
+  transform: rotate(90deg);
+  color: orange;
+}
+.title:hover,
+.title.activeSub{
+  background-color: #203049;
+  color: #fff;
+}
+.desc{
+  padding: 15px;
+  display: none;
+  font-size:15px;
+  width: 600px;
+  line-height: 23px;
+}
+.desc.activeSub{display: block;}
+.desc hr{
+  width: 70%;
+  margin: 20px auto;
+}
+.desc em{
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+}
+.desc span{
+  display: inline-block;
+  margin: 8px auto;
+}
+
+/* 붕괴 스타레일 아코디언 -------------------------------- */
+.starrail{
+  width: 1200px;
+  margin: auto;
+  position: relative;
+}
+.starrail dl{
+  display: flex;
+}
+.starrail .firstTab{
+  width: 70px;
+	height: 700px;
+  border: 1px solid #ddd;
+  margin-right: 5px;
+	float: left;
+	box-sizing: border-box;
+	cursor: pointer;
+	writing-mode: horizontal-tb;
+	transition: 0.3s;
+}
+.starrail dl dt h5{
+	width: 24px;
+	margin: auto;
+	font-size: 20px;
+	margin-top: 20px;
+	font-weight: normal;
+  font-family:'HSBombaram21-Regular';
+  letter-spacing: 2px;
+}
+.firstTab.selected{
+  background-color: #203049;
+  color: #fff;
+}
+
+
+
+/* 아코디언탭 속에 탭 */
+.subContent{
+  width: 850px;
+  padding: 20px;
+  display: none;
+}
+.subContent.subContentOn{
+  display: block;
+}
+
+.subContent .thumbnail img{
+  width: 80px;
+  height: 80px;
+  margin: 5px 5px;
+  object-fit: cover;
+  object-position: top;
+  transition: 0.35s;
+}
+.subContent .thumbnail img.activeThumbnail{
+  border-radius: 20%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+
+.subContent-des img{
+  width: 800px;
+  position: absolute;
+  top: 0;
+  z-index: -100;
+}
+
+.subContent-des_in{
+  width: 600px;
+  position: absolute;
+  bottom: 0px;
+  font-size: 18px;
+  padding: 30px;
+  margin-left: -46px;
+  border: 1px solid #ddd;
+  border-radius: 0 30px 0 0;
+  border-left: none;
+  background-color: #203049;
+  color: #fff;
+  line-height: 28px;
+  letter-spacing: 1px;
+}
+
+.subContent-des_in h4{
+  font-size: 30px;
+  font-family:'HSBombaram21-Regular';
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+
+
+/* 탭 내용 */
+.subContent-text{margin: 20px; display: flex;}
+.subContent-text .subContent-des{display: none;}
+.subContent-text .subContent-des.activeText{display: block;}
+
+
+
+/* gellery-------------------------------------------------------------- */
+#gallery{ 
+	width:1400px;
+	height:788px;
+	position:relative;
+	margin: auto;
+}
+
+.galleryBg{
+  width: 100%;
+  height: 788px;
+  margin-bottom: 500px;
+}
+
+.largeImg li{
+	display:none;
+	position:absolute;
+  width: 1400px;
+  height: 788px;
+  border-radius: 50px 0px 50px 0px;
+  overflow: hidden;
+}
+
+.largeImg img{
+  width: 1400px;
+  height: 788px;
+  object-fit: cover;
+}
+
+.largeImg li:first-child{display:block;}
+
+.largeImg:before {
+  content: "";
+  width: 0px;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top: 100px solid #fff;
+  border-right: 100px solid transparent;
+  z-index: 10;
+}
+.largeImg::after {
+  content: "";
+  width: 20px;
+  height: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-top: 50px solid transparent;
+  border-right: 50px solid #fff;
+  pointer-events: none;
+}
+
+.thumbs{
+	position:absolute;
+	left:50%;	
+	bottom: 40px;
+  transform: translateX(-50%);
+	display: flex;	
+	column-gap: 10px;
+}
+.thumbs li{opacity:0.4;}
+.thumbs li:first-child{opacity:1;}
+.thumbs li a img{
+	width: 130px;
+	height: 73px;
+}
+
+.largeImg li video{width: 1400px;}
+
+/* 월페이퍼 다운로드 버튼----------------------------------------------- */
+
+.imgText {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+  appearance: none;
+  border: none;
+  background: none;
+  color: #203049;
+  cursor: pointer;
+  position: relative;
+  padding: 8px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 22px;
+  font-family:'HSBombaram21-Regular';
+  transition: all .15s ease;
+}
+
+.imgText::before,
+.imgText::after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  left: 0;
+  height: calc(50% - 5px);
+  border: 2px solid #e9e6e6;
+  transition: all .15s ease;
+}
+
+.imgText::before {
+  top: 0;
+  border-bottom-width: 0;
+}
+
+.imgText::after {
+  bottom: 0;
+  border-top-width: 0;
+}
+
+.imgText:active,
+.imgText:focus {
+  outline: none;
+}
+
+.imgText:active::before,
+.imgText:active::after {
+  right: 3px;
+  left: 3px;
+}
+
+.imgText:active::before {
+  top: 3px;
+}
+
+.imgText:active::after {
+  bottom: 3px;
+}
+
+.imgText_lg {
+  position: relative;
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #0f1923;
+  overflow: hidden;
+  box-shadow: inset 0px 0px 0px 1px transparent;
+}
+
+.imgText_lg::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 2px;
+  background-color: #0f1923;
+}
+
+.imgText_lg::after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 4px;
+  height: 4px;
+  background-color: #0f1923;
+  transition: all .2s ease;
+}
+
+.imgText_sl {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: -1px;
+  left: -8px;
+  width: 0;
+  background-color: #8b73f3;
+  transform: skew(-15deg);
+  transition: all .2s ease;
+}
+
+.imgText_text {
+  position: relative;
+}
+
+.imgText:hover {
+  color: #0f1923;
+}
+
+.imgText:hover .imgText_sl {
+  width: calc(100% + 15px);
+}
+
+.imgText:hover .imgText_lg::after {
+  background-color: #fff;
+}

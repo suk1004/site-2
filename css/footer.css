@@ -1,0 +1,51 @@
+footer{
+  width: 100%;
+  height: 300px;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+footer .zzz-black{
+  position: absolute;
+  top: -250px;
+  right: 0;
+  transform: rotate(20deg);
+  z-index: 0;
+}
+footer .hoyocat{
+  position: absolute;
+  top: -250px;
+  left: 10px;
+  filter: brightness(0);
+  transition: 0.5s;
+}
+
+footer:hover .hoyocat{filter: brightness(100%);}
+
+.foot{
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 17px;
+}
+
+.foot ul{
+  color: #fff;
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+address{
+  color: #eee;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+}

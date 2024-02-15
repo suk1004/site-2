@@ -1,0 +1,242 @@
+@import url(common.css);
+@import url(header.css);
+@import url(footer.css);
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons+Outlined');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@font-face {
+  font-family: 'HSBombaram21-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/HSBombaram21-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html{scroll-behavior: smooth;}
+body {
+  color: #333;
+  background: url(../image/hoyoverse-main/hoyoverse-bg2.png);
+  background: url(../image/hoyoverse-main/hoyoverse-bg.png) no-repeat center fixed;
+  background-color: #e3fbff;
+}
+
+/* Main-------------------------------------Main------------------- */
+.nowPos{
+  width: 1400px;
+  font-size: 14px;
+  text-align: right;
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-right: 40px;
+}
+
+.banner{  /*배너전체영역*/
+	position:relative;
+	width:100%;
+	height:500px;
+	margin: auto;
+  padding-top: 300px;
+  background-color: rgba(0, 37, 85, 0.1);
+  backdrop-filter: blur(5px);
+  margin-bottom: 60px;
+}
+.banner .ban{   /*슬라이드영역*/
+	width:1400px; /*보여주는 폭을 줄이고자 할때 가로폭을 맞춰서 줄여줌*/
+	height:500px;
+	overflow:hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.banner .ban ul{
+	display: flex;
+	position:relative;
+	left: -350px;
+}
+.banner .ban ul li{
+	margin-right:10px;
+	width:340px;
+  position: relative;
+}
+.bannerText{
+  width: 340px;
+  height: 500px;
+  color: #eee;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: linear-gradient(to top, #3d1abd, transparent);
+  transition: 0.35s;
+}
+
+.bannerText p{
+  position: absolute;
+  padding: 50px;
+  bottom: 20px;
+  box-sizing: content-box;
+}
+.bannerText p strong{
+  display: block;
+  text-align: center;
+  font-size: 28px;
+  font-weight: normal;
+  font-family: 'HSBombaram21-Regular';
+  letter-spacing: 2px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.banner .ban ul li:hover .bannerText{top: 0;}
+.bannerText span{
+  display: inline-block;
+  padding: 3px 20px;
+  margin-top: 10px;
+  background-color: transparent;
+  border: 1px solid #9599E2;
+  transition: 0.35s;
+  cursor: pointer;
+}
+.bannerText span:hover{
+  background-color: #9599E2;
+  border-radius: 18px 19px 5px 5px / 18px 19px 5px 5px ;
+  color: #000;
+}
+
+.bannerText span::after{
+  content: '\eac9';
+  font-family: 'Material Icons Outlined';
+  vertical-align: middle;
+  display: inline-block;
+  margin-bottom: 3px;
+}
+
+
+.banner .ban ul li img{
+  width: 340px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.ban_btn{
+  position: relative;
+  width: 1400px;
+  margin: auto;
+}
+.ban_left{
+	position:absolute;
+	top:60px;
+	left:-10%;
+	cursor:pointer;
+}
+.ban_right{
+	position:absolute;
+	top:60px;
+	right:-10%;
+	cursor:pointer;
+}
+.ban_btn span{
+	display:inline-block;
+  font-size: 80px;
+}
+
+/* Section-------------------------------------Section------------------- */
+section{margin-bottom: 300px;}
+
+h2{
+  text-align: center;
+  font-size: 80px;
+  font-family: 'HSBombaram21-Regular';
+}
+
+#tabMenu ul{
+  width: 1400px;
+  height: 50px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#tabMenu ul li{
+  width: inherit;
+  height: 50px;
+  border: 2px dashed #8BC6EC;
+  border-radius: 44% 56% 51% 49% / 37% 79% 21% 63% ;
+  text-align: center;
+  line-height: 55px;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-family: 'HSBombaram21-Regular';
+  margin: 80px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#tabMenu ul li:hover{
+  border: 2px dashed #8BC6EC;
+  background-color: #8BC6EC;
+  background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+}
+
+.tab li.activeTap{
+  color: #eee;
+  background-color: #8BC6EC;
+  background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+}
+
+/* 탭메뉴 그리드 */
+.newsGrid{
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: auto;
+  width: 1400px;
+  gap: 20px 0;
+}
+
+.newsGrid img{
+  width: 100%;
+  height: 250px;
+  border: 1px solid #c0c0c0;
+  object-fit: cover;
+  transition: 0.4s;
+}
+.newsCard{
+  overflow: hidden;
+  background-color: rgba(255,255,255,0.4);
+  backdrop-filter: blur(5px);
+}
+.newsGrid img:hover{transform: scale(1.1) rotate(3deg);}
+
+.newsCard .text{
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  border: 1px solid #c0c0c0;
+  border-left: none;
+  border-radius: 0 20px 20px 0;
+}
+.wide{grid-column: span 2;}
+.nbsp{margin-left: 20px;}
+
+.moreBtn{
+  width: 200px;
+  height: 50px;
+  margin: 70px auto;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+  border: 1px solid #000;
+  transition: 0.5s;
+}
+.moreBtn:hover{
+  color: #fff;
+  background-color: #8BC6EC;
+  background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+  box-shadow: rgba(0, 0, 0, 0.9) 0px 25px 20px -20px;
+}
+
+.tabAll .newsGrid{display: none;}
+.tabAll .newsGrid.activeTap{display: grid;}

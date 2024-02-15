@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Hoyoverse Honkai: STARRAIL</title>
+  <script src="https://kit.fontawesome.com/f8f74f011f.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <link rel="stylesheet" href="css/sub1.css">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+</head>
+<body>
+  
+  <div>
+    <header>
+      <nav>
+        <div class="logo"><a href="index.html"><img src="image/hoyoverse-main/hoyoverse-logo.png" alt=""></a></div>
+        <ul class="gnb">
+          <li class="gnb-main"><a href="about1.html">about us</a>
+            <ul class="sub-menu">
+              <li><a href="about1.html">Hoyoverse?</a></li>
+              <li><a href="about2.html">Global Office /<br>Career</a></li>
+            </ul>
+          </li>
+          <li class="gnb-main"><a href="sub1.html">product</a>
+            <ul class="sub-menu">
+              <li><a href="sub1.html">붕괴:3rd</a></li>
+              <li><a href="sub2.html">원신</a></li>
+              <li><a href="sub3.html">붕괴:스타레일</a></li>
+              <li><a href="sub4.html">젠레스 존 제로</a></li>
+              <li><a href="https://www.hoyolab.com/home" target="_blank">HoyoLAB<i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+            </ul>
+          </li>
+          <li class="gnb-main"><a href="news.html">News</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+        <!-- Swiper -->
+      <div id="slideShowUp" class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slideUp"><img class="pos " src="image/honkai-starrail/main1.jpg" alt=""></div>
+          <div class="swiper-slide"><img class="pos posCenter" src="image/honkai-starrail/main2.jpg" alt=""></div>
+          <div class="swiper-slide"><img class="pos" src="image/honkai-starrail/main3.jpg" alt=""></div>
+          <div class="swiper-slide"><img class="pos " src="image/honkai-starrail/main4.png" alt=""></div>
+          <div class="swiper-slide"><img class="pos" src="image/honkai-starrail/main5.png" alt=""></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+        <div class="subLogo">
+          <div>
+            <img src="image/honkai-starrail/starrailLogo.png" alt="">
+          </div>
+        </div>
+
+        <div class="playstopUp">
+          <a href="#" class="stopup indent">stop</a>
+          <a href="#" class="playup indent">play</a>
+        </div>
+
+        <a class="playstore-button" href="https://play.google.com/store/apps/details?id=com.HoYoverse.hkrpgoversea&hl=ko&gl=US" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="icon" viewBox="0 0 512 512">
+            <path d="M99.617 8.057a50.191 50.191 0 00-38.815-6.713l230.932 230.933 74.846-74.846L99.617 8.057zM32.139 20.116c-6.441 8.563-10.148 19.077-10.148 30.199v411.358c0 11.123 3.708 21.636 10.148 30.199l235.877-235.877L32.139 20.116zM464.261 212.087l-67.266-37.637-81.544 81.544 81.548 81.548 67.273-37.64c16.117-9.03 25.738-25.442 25.738-43.908s-9.621-34.877-25.749-43.907zM291.733 279.711L60.815 510.629c3.786.891 7.639 1.371 11.492 1.371a50.275 50.275 0 0027.31-8.07l266.965-149.372-74.849-74.847z"></path>
+          </svg>
+          <span class="texts">
+            <span class="text-1">Download to</span>
+            <span class="text-2">Google Play</span>
+          </span>
+        </a>
+
+        <a class="playstore-button apple" href="https://apps.apple.com/kr/app/%EB%B6%95%EA%B4%B4-%EC%8A%A4%ED%83%80%EB%A0%88%EC%9D%BC/id1599719154" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="icon2">
+            <path d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.09997 22C7.78997 22.05 6.79997 20.68 5.95997 19.47C4.24997 17 2.93997 12.45 4.69997 9.39C5.56997 7.87 7.12997 6.91 8.81997 6.88C10.1 6.86 11.32 7.75 12.11 7.75C12.89 7.75 14.37 6.68 15.92 6.84C16.57 6.87 18.39 7.1 19.56 8.82C19.47 8.88 17.39 10.1 17.41 12.63C17.44 15.65 20.06 16.66 20.09 16.67C20.06 16.74 19.67 18.11 18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z"></path>
+          </svg>
+          <span class="texts texts2">
+            <span class="text-1">Download to</span>
+            <span class="text-2">App Store</span>
+          </span>
+        </a>
+    </main>
+
+    <div class="nowPos">
+      Home 	&gt; Product &gt; <b>Honkai-StarRail</b>
+    </div>
+    <h3>Honkai-StarRail world view</h3>
+    <section class="starrail">
+      <dl>
+        <!-- 첫번째 아코디언 탭 -->
+        <dt class="firstTab firstTab1 selected" data-background=".subContent">
+          <h5>은하열차</h5>
+        </dt>
+        <dd class="subContent subContentOn">
+          <!-- 탭메뉴 -->
+          <div class="thumbnail">
+            <img class="activeThumbnail" src="image/honkai-starrail/himeko-Thumbnail.jpg" alt="" data-alt="tab1">
+            <img src="image/honkai-starrail/welt-Thumbnail.jpg" alt="" data-alt="tab2" class="notFirst">
+            <img src="image/honkai-starrail/danhang-Thumbnail.jpg" alt="" data-alt="tab3" class="notFirst">
+            <img src="image/honkai-starrail/mar7th-Thumbnail.jpg" alt="" data-alt="tab4" class="notFirst">
+          </div>
+          <!-- 탭메뉴 내용 -->
+          <div class="subContent-text">
+            <div class="subContent-des activeText" id="tab1">
+              <div class="subContent-des_in">
+                <h4>히메코</h4>
+                <p>
+                  모험심이 강한 과학자.<br> 어린 시절, 고향 세계에서 좌초된 은하열차와 마주쳤었다.<br>
+                  몇 년 후, 히메코는 그 열차를 고치고 여정을 떠나서야 이것은 시작에 불과하다는 걸 깨달았다. 신세계를 「개척」하는 길엔 더 많은 동료가 필요하다.<br>
+                  동행자들이 서로 다른 곳 바라본대도 그들은 같은 별하늘 아래에 있다.
+                </p>
+              </div>
+              <img src="image/honkai-starrail/himeko.png" alt="">
+            </div>
+            <div class="subContent-des" id="tab2">
+              <div class="subContent-des_in">
+                <h4>웰트</h4>
+                <p>
+                  네겐트로피의 노련한 전 맹주.<br>「세계」의 이름을 계승하고 몇 번이고 수차례 세계를 멸망의 문턱에서 구해냈다.
+                  세인트 파운틴 사건이 일단락된 후 그는 음모의 주동자와 함께 우주 저편으로 향한다.<br>
+                  어쩌면 본인도 그곳에 새로운 여정과 동료들이 기다리고 있으리라 예상치 못한 것 같다.
+                </p>
+              </div>
+              <img src="image/honkai-starrail/welt.png" alt="">
+            </div>
+            <div class="subContent-des" id="tab3">
+              <div class="subContent-des_in">
+                <h4>단항</h4>
+                <p>
+                  「격운」이라는 이름의 장창을 든 차가운 분위기의 과묵한 청년.<br> 기나긴 열차의 개척 여정에서 경호를 맡고 있다.
+                  단항은 과거를 깊이 숨긴 채 자신이 손수 만든 모든 것으로부터 벗어나기 위해 열차와 동행한다.<br>
+                  그러나 열차는 과연 그를 「과거」에서 벗어나게 할 수 있을 것인가?
+                </p>
+              </div>
+              <img src="image/honkai-starrail/danhang.png" alt="">
+            </div>
+            <div class="subContent-des" id="tab4">
+              <div class="subContent-des_in">
+                <h4>Mar.7th</h4>
+                <p>
+                  명랑하고 영민한 소녀.<br> 예를 들면 촬영과 같은 그 나이 또래들이 좋아할 만한 모든 것들에 「열광」한다.
+                  표류하던 만년빙에서 깨어났지만, 자신의 존재와 과거에 대해 아는 것이 하나도 없다는 것을 알아차린다. <br>잠시 고민하던 그녀는 자신이 다시 태어난 날짜를 이름으로 정한다.<br>
+                  이날 Mar. 7th가 「탄생」했다.
+                </p>
+              </div>
+              <img src="image/honkai-starrail/mar7th.png" alt="">
+            </div>
+          </div>
+        </dd>
+        <!-- 두번째 아코디언 탭 -->
+        <dt class="firstTab" data-background=".subContent"> 
+          <h5>우주정거장 헤르타</h5>
+        </dt>
+        <dd class="subContent">
+          <!-- 탭메뉴 -->
+          <div class="thumbnail">
+            <img class="activeThumbnail notFirst" src="image/honkai-starrail/alulan-Thumbnail.jpg" alt="" data-alt="tab5">
+            <img src="image/honkai-starrail/asta-Thumbnail.jpg" alt="" data-alt="tab6" class="notFirst">
+            <img src="image/honkai-starrail/herta-Thumbnail.jpg" alt="" data-alt="tab7" class="notFirst">
+          </div>
+          <!-- 탭메뉴 내용 -->
+          <div class="subContent-text">
+            <div class="subContent-des activeText" id="tab5">
+              <div class="subContent-des_in">
+                <h4>아를란</h4>
+                <p>
+                  말주변이 없는 우주정거장 「헤르타」의 방위과 책임자.<br>
+                  연구는 잘 모르지만, 연구를 사랑하는 우주정거장 연구원들이 편히 연구할 수 있도록 보호하는 일에 목숨도 바칠 수 있다. 통증은 이미 익숙하며 부상을 훈장으로 여긴다.<br>
+                  반려견 페피를 안고 있을 때에만 소년은 경계를 풀고 좀처럼 보기 힘든 미소를 보인다.
+                </p>
+              </div>
+              <img src="image/honkai-starrail/alulan.png" alt="">
+            </div>
+            <div class="subContent-des" id="tab6">
+              <div class="subContent-des_in">
+                <h4>아스타</h4>
+                <p>
+                  호기심과 체력 모두 왕성한 소녀.<br> 우주정거장의 「헤르타」가 임명한 정거장 책임자다.<br>
+                  자기주장이 강한 연구원을 다루는 일이나, 각종 트집을 잡는 지식 학회에 어떻게 우주정거장을 대표해 단도직입적으로 대응하는지 같은 건 아스타에게 모두 누워서 떡 먹기이다.<br>
+                  우주정거장을 지휘하는 게… 가업을 물려받는 것보단 쉽겠지!
+                </p>
+              </div>
+              <img src="image/honkai-starrail/asta.png" alt="">
+            </div>
+            <div class="subContent-des" id="tab7">
+              <div class="subContent-des_in">
+                <h4>헤르타</h4>
+                <p>
+                  우주정거장 「헤르타」의 실질적 주인.<br>
+                  더 블루에서 IQ가 가장 높은 인간으로서 관심 있는 일만 하고 흥미가 떨어지면 떠나버린다——이 우주정거장이 바로 그 산물이다.<br>
+                  평소엔 원격 조종 인형으로 등장한다.<br> "내 어릴 적 모습과 70% 정도 닮았다고 해두지"——헤르타
+                </p>
+              </div>
+              <img src="image/honkai-starrail/herta.png" alt="">
+            </div>
+          </div>
+        </dd>
+
+        <!-- 세번째 탭 -->
+        <dt class="firstTab" data-background=".subContent">
+          <h5>스텔라론헌터</h5>
+        </dt>
+        <dd class="subContent">
+          <!-- 탭메뉴 -->
+          <div class="thumbnail">
+            <img class="activeThumbnail" src="image/honkai-starrail/kafka-Thumbnail.jpg" alt="" data-alt="tab8">
+            <img src="image/honkai-starrail/silverwolf-Thumbnail.jpg" alt="" data-alt="tab9" class="notFirst">
+            <img src="image/honkai-starrail/blade-Thumbnail.jpg" alt="" data-alt="tab10" class="notFirst">
+          </div>
+          <!-- 탭메뉴 내용 -->
+          <div class="subContent-text">
+            <div class="subContent-des activeText" id="tab8">
+              <div class="subContent-des_in">
+                <h4>카프카</h4>
+                <p>
+                  스타피스 컴퍼니의 수배 파일에 카프카는 이름과 「코트 수집이 취미」라고만 적혀있다.<br> 이 스텔라론 헌터에 대해 알려진 거라곤 「운명의 노예」 엘리오가 가장 신뢰하는 멤버 중 하나란 것뿐이다.<br>
+                  카프카는 엘리오가 예견한 「미래」에 도달하기 위해 행동을 개시한다.
+                </p>
+              </div>
+              <img src="image/honkai-starrail/kafka.png" alt="">
+            </div>
+            <div class="subContent-des" id="tab9">
+              <div class="subContent-des_in">
+                <h4>은랑</h4>
+                <p>
+                  우주를 게임으로 여기는 슈퍼 해커.<br>
+                  아무리 까다로운 방어 시스템이라도 은랑은 손쉽게 해독할 수 있다. 그녀와 「지니어스 클럽」 스크루룸 간의 데이터 공방전은 오늘날 해커계의 전설로 남았다.<br>
+                  우주에 돌파해야 할 관문이 몇 개나 남았을까? 은랑은 무척 기대하고 있다.
+                </p>
+              </div>
+              <img src="image/honkai-starrail/silverwolf.png" alt="">
+            </div>
+            <div class="subContent-des" id="tab10">
+              <div class="subContent-des_in">
+                <h4>블레이드</h4>
+                <p>
+                  전장에 몸을 내던지는 검객으로 원래 이름이 무엇인지는 알 수 없다.<br>
+                  「운명의 노예」에 충성을 다하며 무서운 자가 치유 능력을 가지고 있다.
+                  <br>고검을 손에 쥐고 전투하며, 검신에는 부서지고 갈라진 흔적이 널려 있다.<br> 그의 몸과 마음도 검과 같다.
+                </p>
+              </div>
+              <img src="image/honkai-starrail/blade.png" alt="">
+            </div>
+          </div>
+        </dd>
+
+        <!-- 세번째 탭 -->
+        <dt class="firstTab" data-background=".subContent">
+          <h5>벨로보그</h5>
+        </dt>
+        <dd class="subContent">
+          <!-- 탭메뉴 -->
+          <div class="thumbnail">
+            <img class="activeThumbnail" src="image/honkai-starrail/gepard-Thumbnail.jpg" alt="" data-alt="tab11">
+            <img src="image/honkai-starrail/bronya-Thumbnail.jpg" alt="" data-alt="tab12" class="notFirst">
+            <img src="image/honkai-starrail/seele-Thumbnail.jpg" alt="" data-alt="tab13" class="notFirst">
+            <img src="image/honkai-starrail/clara-Thumbnail.jpg" alt="" data-alt="tab14" class="notFirst">
+            <img src="image/honkai-starrail/sampo-Thumbnail.jpg" alt="" data-alt="tab15" class="notFirst">
+            <img src="image/honkai-starrail/pera-Thumbnail.jpg" alt="" data-alt="tab16" class="notFirst">
+            <img src="image/honkai-starrail/surval-Thumbnail.jpg" alt="" data-alt="tab17" class="notFirst">
+            <img src="image/honkai-starrail/natasha-Thumbnail.jpg" alt="" data-alt="tab18" class="notFirst">
+            <img src="image/honkai-starrail/hook-Thumbnail.jpg" alt="" data-alt="tab19" class="notFirst">
+            <img src="image/honkai-starrail/luka-Thumbnail.jpg" alt="" data-alt="tab20" class="notFirst">
+          </div>
+          <!-- 탭메뉴 내용 -->
+          <div class="subContent-text">
+            <div class="subContent-des activeText" id="tab11">
+              <div class="subContent-des_in">
+                <h4>게파드</h4>
+                <p>
+                  고결하고 정직한 실버메인 철위대 방위관.<br> 고상하고 유서 깊은 랜도 가문 출신이다.<br>
+                  광풍과 폭설이 끊임없이 몰아치는 벨로보그에서 사람들의 의식주가 유지될 수 있는 건——<br>
+                  게파드와 그가 거느리는 실버메인 철위대가 이 평온한 일상을 수호하고 있기 때문이란걸, 누구도 부정할 수 없을 것이다.
+                </p>
+              </div>
+              <img src="image/honkai-starrail/gepard.png" alt="">
+            </div>
+            <div class="subContent-des" id="tab12">
+              <div class="subContent-des_in">
+                <h4>브로냐</h4>
+                <p>
+                  벨로보그 「수호자」의 계승자.<br> 젊고 노련한 실버메인 철위대 단장이다.<br>
+                  브로냐는 어려서부터 엄격한 교육을 받아온 덕에 「계승자」에 걸맞은 우아함과 친화력을 지녔다.<br>
+                  하층 구역의 열악한 환경을 본 브로냐는 미래 최고의 결정권자라는 자리에 점차 의혹을 품는다…. 「내가 받은 훈련이 정말 시민들을 그들이 원하는 삶으로 이끌 수 있을까?」
+                </p>
+              </div>
+              <img src="image/honkai-starrail/bronya.png" alt="">
+            </div>
+            <div class="subContent-des" id="tab13">
+              <div class="subContent-des_in">
+                <h4>제레</h4>
+                <p>
+                  늠름하고 뛰어난 「와일드 파이어」의 멤버.<br> 지하의 위험하고 혼란스러운 환경에서 자랐으며 혼자 다니는 것에 익숙하다.<br>
+                  보호하거나 보호를 받거나, 억압하거나 억압을 받거나, 제레에게 세상은 늘 이런 이분법적인 모습을 보였다——<br>
+                  「그 소녀」가 나타나기 전까진 말이다.
+                </p>
+              </div>
+              <img src="image/honkai-starrail/seele.png" alt="">
+            </div>
+            <div class="subContent-des" id="tab14">
+              <div class="subContent-des_in">
+                <h4>클라라</h4>
+                <p>
+                  로봇에게 키워진 소녀.<br> 나이를 초월한 냉철함과 끈기를 갖고 있다.
+                  클라라에게 스바로그의 이성적인 계산이란 결코 틀릴 리 없는 세계의 법칙이다.<br>
+                  「계산」 결과가 무조건 모두에게 행복을 가져다주지 않는다는 걸 알기 전까지는 말이다.<br>
+                  소심했던 소녀는 용감해지기로 결심한다.
+                </p>
+              </div>
+              <img src="image/honkai-starrail/clara.png" alt="">
+            </div>
+            <div class="subContent-des" id="tab15">
+              <div class="subContent-des_in">
+                <h4>삼포</h4>
+                <p>
+                  청산유수 화술의 상인.<br> 「이윤」이 있는 곳이라면 어디든 삼포의 그림자가 있다.<br>
+                  삼포의 수중에 있는 희귀한 정보 때문에 사람들은 어쩔 수 없이 그와의 관계를 유지하지만, 그의 「손님」이 되는 건 그닥 좋은 일이 아니다.<br>
+                  가격만 적당하면 「손님」도 언제든 「상품」으로 전락될 수 있다.
+                </p>
+              </div>
+              <img src="image/honkai-starrail/sampo.png" alt="">
+            </div>
+            <div class="subContent-des" id="tab16">
+              <div class="subContent-des_in">
+                <h4>페라</h4>
+                <p>
+                  일처리가 빈틈없는 실버메인 철위대 정보관.<br> 나이는 어려도 머리는 비상하다.<br>
+                  병력 이동, 물자 분배, 지형 상황 등 그 어떠한 질문에도 페라는 한 치의 오차 없이 즉각적으로 대답해낸다.<br>
+                  페라의 핸드폰 케이스에 대해서는… 「이건 일과 무관합니다, 장관님」
+                </p>
+              </div>
+              <img src="image/honkai-starrail/pera.png" alt="">
+            </div>
+            <div class="subContent-des" id="tab17">
+              <div class="subContent-des_in">
+                <h4>서벌</h4>
+                <p>
+                  자유롭고 반항적인 랜도 가문의 장녀.<br> 쿠쿠리아의 절친이었으며 지금은 취미로 엔지니어 일을 하고 있다.<br>
+                  영원한 겨울의 벨로보그에서 「영원한 겨울」 기계공방을 운영하고 있으며 가끔은 가게 문을 닫고 로큰롤 야외 공연을 하기도 한다.<br>
+                  누군가 기계공방으로 어떻게 돈을 버냐고 묻자… <br>「이건 취미생활이야, 난 돈이 궁하지 않거든」이라고 대답했다.
+                </p>
+              </div>
+              <img src="image/honkai-starrail/surval.png" alt="">
+            </div>
+            <div class="subContent-des" id="tab18">
+              <div class="subContent-des_in">
+                <h4>나타샤</h4>
+                <p>
+                  일에 빈틈이 없고 신중한 의사.<br> 늘 종잡을 수 없는 웃음을 띠고 있다.<br>
+                  의료 자원이 부족한 하층 구역에서 나타샤는 몇 안 되는 의사로서 하층의 사람들을 돌본다.<br>
+                  장난꾸러기 후크도 나타샤에겐 얌전히 「나타샤 언니」라고 부른다.
+                </p>
+              </div>
+              <img src="image/honkai-starrail/natasha.png" alt="">
+            </div>
+            <div class="subContent-des" id="tab19">
+              <div class="subContent-des_in">
+                <h4>후크</h4>
+                <p>
+                  모험 집단 「두더지파」의 대장.<br> 자칭 「칠흑의 후크님」이다.<br>
+                  어린애 취급받는 걸 싫어하며, 어른들에게 의지하지 않아도 자기 몫을 할 수 있다고 생각한다.<br>
+                  어른들은 열계를 모험하고, 삼포는 지상으로 가 모험을 하며, 환자들은 모험하는 심정으로 나타샤에게 치료를 받으니…… 아이들도 후크의 지도 아래 자신들만의 모험을 해야 한다!
+                </p>
+              </div>
+              <img src="image/honkai-starrail/hook.png" alt="">
+            </div>
+            <div class="subContent-des" id="tab20">
+              <div class="subContent-des_in">
+                <h4>루카</h4>
+                <p>
+                  낙천적이고 사소한 일에 얽매이지 않는 기계팔 자유 격투가<br> 「와일드 파이어」 멤버.<br>
+                  링에서 전장까지, 격투선수에서 전사로, 루카는 그의 힘으로 하층 구역 사람들을 지켰다.<br>
+                  절망을 맛봤던 경험으로 인해 그는 더욱더 타인에게 희망을 주고 싶어 한다.
+                </p>
+              </div>
+              <img src="image/honkai-starrail/luka.png" alt="">
+            </div>
+          </div>
+        </dd>
+
+        <!-- 4번쨰 탭 -->
+        <dt class="firstTab" data-background=".subContent">
+          <h5>선주 나부</h5>
+        </dt>
+        <dd class="subContent">
+          <!-- 탭메뉴 -->
+          <div class="thumbnail">
+            <img class="activeThumbnail" src="image/honkai-starrail/Jingyuan-Thumbnail.jpg" alt="" data-alt="tab21">
+            <img src="image/honkai-starrail/Yanqing-Thumbnail.jpg" alt="" data-alt="tab22" class="notFirst">
+            <img src="image/honkai-starrail/bailu-Thumbnail.jpg" alt="" data-alt="tab23" class="notFirst">
+            <img src="image/honkai-starrail/Tingyun-Thumbnail.jpg" alt="" data-alt="tab24" class="notFirst">
+            <img src="image/honkai-starrail/Sushang-Thumbnail.jpg" alt="" data-alt="tab25" class="notFirst">
+            <img src="image/honkai-starrail/Qingque-Thumbnail.jpg" alt="" data-alt="tab26" class="notFirst">
+            <img src="image/honkai-starrail/Yukong-Thumbnail.jpg" alt="" data-alt="tab27" class="notFirst">
+            <img src="image/honkai-starrail/Luocha-Thumbnail.jpg" alt="" data-alt="tab28" class="notFirst">
+          </div>
+          <!-- 탭메뉴 내용 -->
+          <div class="subContent-text">
+            <div class="subContent-des activeText" id="tab21">
+              <div class="subContent-des_in">
+                <h4>경원</h4>
+                <p>
+                  겉으로는 나태하지만 계산적이고 치밀한 「나부」 운기 장군.<br>
+                  지략을 펼쳐 위험한 국면을 만회하지 않기 때문에 평소에도 돌발 사태가 발생하지 않도록 꽤나 신경을 쓴다.<br>
+                  그 세심한 책략덕에 선주의 평화가 꽤 오랫동안 지속되자 다소 나태해 보이는 경원은 사람들의 화두에 오르며 「감긴 눈 장군」이라는 별명까지 얻었다.
+                </p>
+              </div>
+              <img src="image/honkai-starrail/Jingyuan.png" alt="">
+            </div>
+            <div class="subContent-des" id="tab22">
+              <div class="subContent-des_in">
+                <h4>연경</h4>
+                <p>
+                  기세등등한 운기 호위병. 선주 「나부」의 최강 검객.<br>
+                  검생검사 소년. 연경이 손에 검을 쥐고 있으면 그 누구도 이 천재를 얕잡아 보지 못한다.<br>
+                  그가 손에 쥔 보검을 잠시나마 거두게 하는 건 시간뿐이다.
+                </p>
+              </div>
+              <img src="image/honkai-starrail/Yanqing.png" alt="">
+            </div>
+            <div class="subContent-des" id="tab23">
+              <div class="subContent-des_in">
+                <h4>백로</h4>
+                <p>
+                  활발한 여자 아이.<br> 비디아다라족의 「약을 품은 용왕의 딸」이자 실력 있는 명의.<br>
+                  「따뜻한 물을 많이 마셔」, 「하룻밤 자면 나아」와 같이 틀을 깨는 처방을 자주 내린다.<br>
+                  다른 사람이 고통을 모습을 못 봐서 치료할 때면 항상 눈을 꼭 감는다.
+                  ——병만 나으면 됐지!
+                </p>
+              </div>
+              <img src="image/honkai-starrail/bailu.png" alt="">
+            </div>
+            <div class="subContent-des" id="tab24">
+              <div class="subContent-des_in">
+                <h4>정운</h4>
+                <p>
+                  처세술에 능한 여우족 소녀.<br> 천박사(天舶司) 행상단 「명화」 수석 대표.
+                  정운은 슬기로운 마음과 뛰어난 화술을 타고 났다. <br>그녀가 입을 열면 모두가 이야기를 더 듣고 싶어 한다. 그녀의 관리 하에 선주의 무역 축제는 점차 명성을 널리 떨쳤다.<br>
+                  다툼을 최대한 피하고 자신의 이익을 위해 최대한 설득한다——이것이 정운의 원칙이다.
+                </p>
+              </div>
+              <img src="image/honkai-starrail/Tingyun.png" alt="">
+            </div>
+            <div class="subContent-des" id="tab25">
+              <div class="subContent-des_in">
+                <h4>소상</h4>
+                <p>
+                  큰 검을 지니고 다니는 단순하고 열정적인 신입 운기군.<br>
+                  운기군의 역사와 전설을 동경하며 훌륭한 인물이 되고 싶어한다.<br>
+                  이를 위해 소상은 「타인의 곤경을 내 일처럼 생각하고 도움이 필요하면 기꺼이 돕자」, 「매일 선행을 행하고 자신을 되돌아보자」라는 신조를 철저히 지키기로 결심하며 흔쾌히 남을 돕는 바쁜 나날을 보내고 있다.
+                </p>
+              </div>
+              <img src="image/honkai-starrail/Sushang.png" alt="">
+            </div>
+            <div class="subContent-des" id="tab26">
+              <div class="subContent-des_in">
+                <h4>청작</h4>
+                <p>
+                  「농땡이」만큼은 절대 게을리하지 않는 태복사(太卜司)의 일반 점술가.<br>
+                  부모의 기대에 부응하고자 태복사에 취직했지만, 한가한 철밥통일 줄 알았던 직장이 강도 높은 고역이었다는 걸 알게 된다.<br>
+                  여러 해를 수련한 끝에, 청작은 마침내 부서 이동에 관계없이 자신은 여전히 최하위 직급의 점술가라는 점을 깨닫게 된다.<br>
+                  할일 없을 땐 책을 펼쳐보고, 고대 패 놀이를 한다면… 인생, 더 바랄 게 있을까?
+                </p>
+              </div>
+              <img src="image/honkai-starrail/Qingque.png" alt="">
+            </div>
+            <div class="subContent-des" id="tab27">
+              <div class="subContent-des_in">
+                <h4>어공</h4>
+                <p>
+                  선주 「나부」 천박사의 책임자. 성격이 온화하고 일 처리가 노련하다. <br>
+                  젊었을 때 비행사로 오랜 기간 전쟁을 겪어 우수한 전적으로<br> 책임자가 되었다.<br> 그러나 처참했던 전쟁을 겪은 탓에 더 이상 하늘을 날지 않는다. <br>
+                  이제는 공무에 전념하고 있지만, 「나부」의 항해 방향에 대한 그녀의 영향력은 오늘날에도 여전하다.
+                </p>
+              </div>
+              <img src="image/honkai-starrail/Yukong.png" alt="">
+            </div>
+            <div class="subContent-des" id="tab28">
+              <div class="subContent-des_in">
+                <h4>나찰</h4>
+                <p>
+                  큼직한 관을 등에 메고 있는 금발의 준수한 청년.<br>
+                  천외행상인 그는 불행히도 선주 나부의 스텔라론 위기에 휘말렸다.<br>
+                  그의 뛰어난 의술이 쓸모가 있을 것 같다.
+                </p>
+              </div>
+              <img src="image/honkai-starrail/Luocha.png" alt="">
+            </div>
+          </div>
+        </dd>
+
+      </dl>
+
+
+    </section>
+
+      </div>
+      <h3>Honkai-StarRail Wallpaper</h3>
+
+    <section>
+
+
+      <div class="galleryBg">
+        <div id="gallery">
+          <ul class="largeImg">
+            <li><video src="image/honkai-starrail/starrailVideo.mp4"  controls></video></li>
+            <li><video src="image/honkai-starrail/starrailVideo2.mp4" controls></video></li>
+            <li><img src="image/honkai-starrail/main1.jpg" alt="image2"></li>
+            <li><img src="image/honkai-starrail/main2.jpg" alt="image3"></li>
+            <li><img src="image/honkai-starrail/main3.jpg" alt="image4"></li>
+            <li><img src="image/honkai-starrail/main4.png" alt="image5"></li>
+            <li><img src="image/honkai-starrail/main5.png" alt="image6"></li>
+            <li><img src="image/honkai-starrail/main6.jpg" alt="image7"></li>
+          </ul>
+          <ul class="thumbs">
+            <li><a href="#none"><img src="image/honkai-starrail/danhang-umworl.png" alt="image0"></a></li>
+            <li><a href="#none"><img src="image/honkai-starrail/kafka-Thumbnail2.png" alt="image1"></a></li>
+            <li><a href="#none"><img src="image/honkai-starrail/main1.jpg" alt="image2"></a></li>
+            <li><a href="#none"><img src="image/honkai-starrail/main2.jpg" alt="image3"></a></li>
+            <li><a href="#none"><img src="image/honkai-starrail/main3.jpg" alt="image4"></a></li>
+            <li><a href="#none"><img src="image/honkai-starrail/main4.png" alt="image5"></a></li>
+            <li><a href="#none"><img src="image/honkai-starrail/main5.png" alt="image6"></a></li>
+            <li><a href="#none"><img src="image/honkai-starrail/main6.jpg" alt="image7"></a></li>
+          </ul>
+          <!-- 다운로드 버튼 -->
+        <a href="image/honkai-starrail/starrail-wallpaper.zip" download>
+          <button class="imgText">
+            <span class="imgText_lg">
+                <span class="imgText_sl"></span>
+                <span class="imgText_text">Download Media</span>
+            </span>
+          </button>
+        </a>
+
+        </div>
+      </div>
+
+
+
+
+
+
+
+      
+
+
+    </section>
+
+    <footer>
+      <img class="zzz-black" src="image/hoyoverse-main/zzz-black.png" alt="">
+      <img class="hoyocat" src="image/hoyoverse-main/hoyo-no-bg-2.png" alt="">
+        <div class="foot">
+          <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="about1.html">about us</a></li>
+            <li><a href="sub1.html">product</a></li>
+            <li><a href="news.html">news</a></li>
+            <li><a href="#none">비즈니스 협력</a></li>
+            <li><a href="#none">개인정보처리방침</a></li>
+            <li><a href="#none">이용약관</a></li>
+          </ul>
+          <div class="flogo">
+            <img src="image/hoyoverse-main/hoyoverse-logo2.png" alt="logo">
+          </div>
+            <address>
+              Copyright &copy; <span>cognosphere</span>. All Rights Reserved
+            </address>
+        </div>
+    </footer>
+
+  <script src="js/jquery-3.7.0.min.js"></script>
+  <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  
+  <script src="js/index.js"></script>
+
+
+</body>
+</html>

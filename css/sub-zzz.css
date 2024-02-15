@@ -1,0 +1,574 @@
+@import url(common.css);
+@import url(header.css);
+@import url(footer.css);
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons+Outlined');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons+Rounded');
+
+@font-face {
+  font-family: 'HSBombaram21-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/HSBombaram21-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html{scroll-behavior: smooth;}
+body{
+  color: #333;
+  background-color: #e3fbff;
+  background-image: url(../image/hoyoverse-main/hoyoverse-bg2.png);
+  background: url(../image/hoyoverse-main/hoyoverse-bg.png) no-repeat center fixed;
+}
+
+.nowPos{
+  width: 1400px;
+  margin: 100px auto 0;
+  font-size: 14px;
+  text-align: right;
+}
+h3{
+  width: 1400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'HSBombaram21-Regular';
+  font-size: 20px;
+  position: relative;
+  margin: 0px auto 100px;
+}
+h3::before{
+  content: '';
+  position: absolute;
+  width: 35%;
+  left: 0;
+  top: 50%;
+  border: 1px solid #666;
+}
+
+h3::after{
+  content: '';
+  position: absolute;
+  width: 35%;
+  right: 0;
+  top: 50%;
+  border: 1px solid #666;
+}
+
+
+/* main ------------------------------------------*/
+.mainVisual{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+.mainVisual li:first-child{
+  width: 1590px;
+  margin: auto;
+}
+
+.mainVisual li:first-child img{
+  width: 1590px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.mainVisual li:nth-child(2){
+  position: absolute;
+  top: 80px;
+  right: 8%;
+  width: 130px;
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  cursor: pointer;
+  transition: 0.35s;
+}
+
+.mainVisual li:nth-child(2)::before{
+  content: "";
+  width: 0px;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top: 40px solid #fff;
+  border-right: 40px solid transparent;
+  z-index: 10;
+}
+.mainVisual li:nth-child(2)::after{
+  content: "";
+  width: 20px;
+  height: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-top: 40px solid transparent;
+  border-right: 40px solid #fff;
+  pointer-events: none;
+}
+
+.mainVisual h2{
+  font-family: 'HSBombaram21-Regular';
+  font-size: 70px;
+  margin: 5px 25px;
+  width: 75px;
+  writing-mode: horizontal-tb;
+}
+
+.mainVisual li:nth-child(3){
+  width: 100px;
+  height: 100px;
+  background-color: #fffc30;
+  border: 10px solid #333;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  transition: 0.35s;
+  z-index: 10;
+}
+
+.mainVisual li:nth-child(3):hover{
+  bottom: 9%;
+  box-shadow: rgba(0, 0, 0, 0.9) 0px 25px 20px -20px;
+}
+
+@keyframes scroll-animation{
+  0%{
+    left: 0;
+  }
+  100%{
+    left: -400px; /* 텍스트 width와 동일 */
+  }
+}
+
+main>div{
+  position: relative;
+}
+
+.animated-title{
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  bottom: 11%;
+}
+.track{
+  position: relative;
+  width: 2800px;
+  display: flex;
+  animation: scroll-animation 5s linear infinite;
+}
+.track p{
+  width: 400px;
+  font-size: 30px;
+  font-weight: 800;
+  text-transform: uppercase;
+  background-color: #fffc30;
+  border-top: 5px solid #333;
+  border-bottom: 5px solid #333;;
+}
+
+
+
+.mainVisual li i{
+  position: absolute;
+  color: #000;
+  top: 50%;
+  left: 53%;
+  font-size: 50px;
+  transform: translate(-50%, -50%);
+}
+
+.modal-notice:hover{transform: translateX(-10%);}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.4);
+  position:fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  display: none;
+  z-index: 10;
+}
+
+.modal-content {
+  background-color: #fff;
+  width: 350px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  padding: 30px;
+}
+
+.modal-content img{
+  width: 100px;
+  height: 100px;
+}
+
+.modal-content h2{
+  font-weight: bold;
+  font-size: 28px;
+}
+.modal-content img {
+  display: block;
+  margin: 20px auto;
+  border-radius: 15px;
+}
+
+.modal-form{height: 200px;}
+
+.modal-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.modal-form input[type=text],
+.modal-form input[type=email]
+{
+  width: 300px;
+  padding: 8px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  outline: none;
+  box-sizing: border-box;
+  transition: 0.35s;
+}
+.tellnum input[type=tel]{
+  width: 90px;
+  padding: 5px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  outline: none;
+  box-sizing: border-box;
+  margin: 10px 0;
+  transition: 0.35s;
+}
+
+.modal-form :is(input[type=text],input[type=email],input[type=tel]):focus{
+  border: none;
+  border-bottom: 1px solid #3538ff;
+  background-color: rgba(92, 89, 253, 0.1);
+}
+.modal-form :is(input[type=text],input[type=email],input[type=tel],textarea):focus::placeholder{
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.modal-form p{
+  margin-top: 20px;
+  font-size: 18px;
+}
+.modal-form p em{
+  font-size: 15px;
+  font-style: normal;
+}
+.modal-form p strong:last-child{
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.btn-guide {
+  margin: auto;
+  width: 120px;
+  background-color: #175fa2;
+  color: #fff;
+  font-size: 16px;
+  padding: 3px;
+  border-radius: 5px;
+  display: block;
+  margin-top: 15px;
+}
+.btn-close {
+  color: #999;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 30px;
+}
+
+
+/* 캐릭터-------------------------------------- */
+
+#gallery{ 
+	width:100vw;
+	height:788px;
+	position:relative;
+	margin: auto;
+  background: url(../image/hoyoverse-main/hoyoverse-bg2.png) no-repeat center fixed;
+}
+
+.zzzChar{
+  width: 100vw;
+  height: 788px;
+  margin-bottom: 100px;
+  background-color: rgba(161, 161, 161, 0.15);
+  position: relative;
+}
+
+.zzzChar-pic{
+  width: 1400px;
+  margin: auto;
+}
+
+
+/* ############ Scroll Reveal CSS Animation ############ */
+@keyframes ltr {
+  0% {
+    opacity: 0;
+    transform: translateX(-250px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes rtl {
+  0% {
+    opacity: 0;
+    transform: translateX(250px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* 슬라이더 캐릭터 */
+.zzzChar-pic li{
+	position:absolute;
+  width: 1400px;
+  height: 788px;
+  display: none;
+  overflow: hidden;
+}
+.zzzChar-pic li.activeS{
+  display: block;
+}
+
+.rtl{
+  width: 1400px;
+  height: 788px;
+  object-fit: cover;
+  animation: rtl 0.7s linear both;
+}
+
+.ltr{
+  position: absolute;
+  bottom: 20%;
+  animation: ltr 0.7s linear both;
+}
+.char2 .ltr{
+  top: 20%;
+  left: 30%;
+}
+.char3 .ltr{
+  bottom: 33%;
+}
+.char4 .ltr{
+  bottom: 50%;
+  left: 2%;
+}
+.char5 .ltr{
+  top: 20%;
+  right: 0;
+}
+.char6 .ltr{
+  top: 20%;
+  left: 16%;
+}
+.char7 .ltr{
+  top: 35%;
+  left: 5%;
+}
+.char8 .ltr{
+  top: 25%;
+  right:2%;
+}
+.char9 .ltr{
+  top: 25%;
+  left:20%;
+}
+.char10 .ltr{
+  top: 25%;
+  left:10%;
+}
+
+.ltr em{
+  display: block;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+}
+.ltr strong{
+  font-size: 70px;
+  font-family: 'HSBombaram21-Regular';
+  font-weight: normal;
+  font-style: italic;
+}
+
+
+
+/* 슬라이더 썸네일 */
+.zzz-thumbs-ban{
+  position: relative;
+  width: 1200px;
+  height: 788px;
+  margin: auto;
+}
+
+.zzz-thumbsAll{
+  width: 416px;
+  height: 83px;
+  overflow: hidden;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%);
+}
+.zzz-thumbsAll ul{
+  display: flex;
+  position: relative;
+  left: -135px;
+}
+
+.zzz-thumbs li{
+  border: 1px solid #8b73f3;
+  backdrop-filter: blur(5px);
+  margin-top: 6px;
+  margin-right: 7px;
+  width: 135px;
+	height: 70px;
+}
+
+.zzz-thumbs li img{
+	width: 130px;
+	height: 70px;
+  object-fit: cover;
+}
+
+.zzz-vis_left{
+	position:absolute;
+	bottom: 18px;
+	left: 28%;
+	cursor:pointer;
+}
+.zzz-vis_right{
+	position:absolute;
+	bottom: 18px;
+	right: 28%;
+	cursor:pointer;
+}
+.zzz-vis_btn i{
+	display:inline-block;
+  font-size: 70px;
+  color: #8b73f3;
+}
+
+
+
+
+
+
+/* 배너뉴스 영역 */
+.zzz-banner{
+  position: relative;
+  width: 100vw;
+  height: 800px;
+  margin: auto;
+  background: url(../image/zzz/main4.jpg) no-repeat center fixed;
+  background-size: cover;
+  margin-bottom: 300px;
+}
+
+.zzz-ban{
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.zzz-ban ul{
+  display: flex;
+  position: relative;
+  gap: 10px;
+}
+.zzz-ban ul li{
+  width: 600px;
+  justify-content: center;
+  position:relative;
+	left: -600px;
+}
+
+.zzz-ban ul li p:hover{
+  padding-left: 80px;
+  text-decoration: solid;
+}
+.zzz-ban ul li p:hover::before{
+  opacity: 1;
+}
+
+.zzz-ban ul li p::before{
+  content: '\eac9';
+  font-family: 'Material Icons Outlined';
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+  position: absolute;
+  left: 20px;
+  bottom: 5px;
+  transition: 0.35s;
+}
+
+.zzz-ban ul li img{
+  width: 600px;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+  transition: 0.5s;
+}
+
+.zzz-ban ul li p{
+  padding: 10px;
+  padding-left: 30px;
+  font-size: 20px;
+  background-color: #fff;
+  border-radius: 0 0 20px 20px;
+  transition: 0.35s;
+}
+.zzz-ban ul li strong{
+  font-style: italic;
+  font-size: 22px;
+}
+
+.zzz-ban_btn{
+  position: absolute;
+  width: 250px;
+  height: 180px;
+  margin: auto;
+  color: #ffffff;
+  font-weight: bold;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+.zzz-ban_left{
+	position:absolute;
+	bottom: 60px;
+	left:0;
+	cursor:pointer;
+}
+.zzz-ban_right{
+	position:absolute;
+	bottom: 60px;
+	right:0;
+	cursor:pointer;
+}
+.zzz-ban_btn span{
+	display:inline-block;
+  font-size: 80px;
+}

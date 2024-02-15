@@ -1,0 +1,353 @@
+@import url(common.css);
+@import url(header.css);
+@import url(footer.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@font-face {
+  font-family: 'HSBombaram21-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/HSBombaram21-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html{scroll-behavior: smooth;}
+body {
+  color: #333;
+  background: url(../image/hoyoverse-main/hoyoverse-bg2.png) no-repeat center fixed;
+  background: url(../image/hoyoverse-main/hoyoverse-bg.png) no-repeat center fixed;
+  background-color: #fff;
+}
+
+/* Main-------------------------------------Main------------------- */
+.nowPos{
+  width: 1080px;
+  margin: auto;
+  font-size: 14px;
+  text-align: right;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+
+.city{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  border: 5px solid crimson;
+  border-radius: 50%;
+  display: none;
+  opacity: 0;
+}
+.city span{
+  width: 15px;
+  height: 15px;
+  border: 3px solid #333;
+  background-color: crimson;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%)
+}
+
+.city:nth-child(1){top: 400px; left: 685px;} /* 서울 */
+.city:nth-child(3){top: 420px; left: 740px;} /* 상하이 */
+.city:nth-child(2){top: 470px; left: 630px;} /* 도쿄 */
+.city:nth-child(4){top: 610px; left: 570px;} /* 싱가포르 */
+.city:nth-child(5){top: 320px; left: 1470px;} /* 몬트리올 */
+
+.city.activeDot{
+  display: block;
+  opacity: 1;
+}
+
+/* Section-------------------------------------Section------------------- */
+.MapAll{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.MapAll .Map-in{margin: auto;}
+
+.MapAll .Map-in img{
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.Map-in{position: relative;}
+
+.globalBox ul{
+  width: auto;
+  height: auto;
+  position: absolute;
+  right: 30%;
+  bottom: 20%;
+  border-radius: 15px;
+  background: #f0f0f0;
+  box-shadow:  20px 20px 40px #b6b6b6,-20px -20px 40px #ffffff;
+  overflow: hidden;
+}
+.globalBox ul li{
+  font-size: 28px;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: rgb(118, 99, 204);
+  transition: 0.5s;
+}
+
+.globalBox ul li:hover{background-color: rgb(139, 115, 243); color: #eee;}
+
+
+.search-box{
+  width: 350px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  border: 2px solid rgb(139, 115, 243);
+  border-radius: 30px;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.searchInput {
+  font-style: italic;
+  border: none;
+  background: none;
+  outline: none;
+  color: #000;
+  font-size: 15px;
+  margin-left: 10px;
+}
+.searchInput:focus::placeholder{opacity: 0; transition: 0.2s;}
+
+.button {
+  display: inline-block;
+  /* padding: 20px 15px; */
+  width: 160px;
+  height: inherit;
+  text-align: center;
+  border-radius: 30px;
+  border: none;
+  transition: all 0.2s ease-in;
+  position: relative;
+  overflow: hidden;
+  font-size: 19px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.button:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.25);
+  top: 100%;
+  width: 140%;
+  height: 180%;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.button:after {
+  content: "";
+  position: absolute;
+  left: 55%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.45);
+  top: 180%;
+  width: 160%;
+  height: 190%;
+  background-color: rgb(139, 115, 243);
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.button:hover {color: #ffffff;}
+
+.button:hover:before {
+  top: -35%;
+  background-color: rgb(139, 115, 243);
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.button:hover:after {
+  top: -45%;
+  background-color: rgb(139, 115, 243);
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+/* 워크스테이션, 워크타입------------------------------------------------------------ */
+.selectBox{
+  width: 1000px;
+  /* border: 1px solid #000; */
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.selectBox-in{
+  display: flex;
+  justify-content: space-around;
+  flex: 4;
+  height: 50px;
+  text-align: center;
+  z-index: 200;
+}
+
+.search-box{flex: 2;}
+
+
+.selectBox-main>a{
+  display: block;
+  position: relative;
+  width: 230px;
+  height: 50px;
+  line-height: 50px;
+  color: #000;
+  font-size: 26px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.selectBox-main>a::after{
+  content: '\f0dd';
+  font-family: 'fontawesome';
+  font-size: 16px;
+  position: absolute;
+  top: -2px;
+  right: 0px;
+  color: #000;
+}
+
+
+/* selectBox 서브 내려오는 부분 ------------- */
+.selectBox-sub{
+  display: none;
+  backdrop-filter: blur(2px);
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.selectBox-sub li{
+  margin-top: 8px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: rgb(177, 163, 238);
+  transition: 0.35s;
+}
+
+.selectBox-sub li a{
+  color: #e0e0e0;
+  font-size: 18px;
+}
+
+.selectBox-sub li:hover {background-color: #dbe4ea;}
+.selectBox-sub li:hover a{color: rgb(177, 163, 238);}
+
+.career{
+  width: 1200px;
+  margin: 100px auto 250px;
+  height: 700px;
+}
+.career h2{
+  text-align: center;
+  font-size: 100px;
+  margin: 20px auto;
+  font-family: 'HSBombaram21-Regular';
+  position: relative;
+}
+
+h2::before{
+  content: '';
+  position: absolute;
+  width: 33%;
+  left: 0;
+  top: 50%;
+  border: 1px solid #666;
+}
+
+h2::after{
+  content: '';
+  position: absolute;
+  width: 33%;
+  right: 0;
+  top: 50%;
+  border: 1px solid #666;
+}
+
+.career-in{
+  width: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.jobsAll{
+  width: 1000px;
+  height: 400px;
+  margin: 50px auto;
+}
+
+.jobs{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.jobs .job{
+  background-color: #9ac4e0;
+  background-image: linear-gradient(135deg, #b4d7ee 0%, #c0c2ef 100%);
+  border-radius: 25px;
+  width: 400px;
+  padding: 40px 40px;
+  font-size: 22px;
+  margin-top: 15px;
+  transition: 0.5s;
+  position: relative;
+}
+.job p{
+  opacity: 0;
+  transition: 0.35s;
+  color: #fff;
+  font-size: 20px;
+  position: absolute;
+  bottom: 0;
+  right: -100%;
+  height: inherit;
+}
+.jobs .job:hover{
+  box-shadow: rgba(0, 0, 0, 0.9) 0px 25px 20px -20px;
+  background-color: #8BC6EC;
+  background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+  transition: 0.3s;
+}
+.job:hover p{
+  opacity: 1;
+  bottom: 5%;
+  right: 15%;
+}
+
+.tabAll{display: none;}
+.tabAll.activeTap{display: block;}
+
+
+
+
+footer .zzz-black{z-index: -100;}
